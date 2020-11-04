@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <head>
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Playgrounds</h1>
+    <div id="Scoreboard" class="container">
+        <div id="GamePanel">
+            <h2>Game: 1</h2>
+        </div>
+        <div id="ScorePanel" class="container">
+            <h2>Player: <span id="PlayerScore">1</span></h2>
+            <h2>CPU: <span id="CpuScore">1</span></h2>
+        </div>
+    </div>
+
+    <div id="GameOptions" class="container">
+        <div id="Rock" class="PlayerOption"><h2>Rock</h2></div>
+        <div id="Paper" class="PlayerOption"><h2>Paper</h2></div>
+        <div id="Scissors" class="PlayerOption"><h2>Scissors</h2></div>
+    </div>
+    <h1 id="GameMessage">You Won!</h1>
+
 </body>
 <footer>
     <script src="script.js"></script>
